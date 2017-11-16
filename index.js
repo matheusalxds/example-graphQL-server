@@ -10,9 +10,9 @@ app.use(bodyParser.json());
 import './db';
 
 // Graphql
-import rootSchema from './src2/graphql/root';
-app.use('/v1', graphqlHttp({ schema: rootSchema, graphiql: true }));
-console.log('[GRAPHQL SERVER] Running on http://localhost:3000/graphql');
+import rootSchema from './src3/graphql/root';
+app.use('/v2', graphqlHttp({ schema: rootSchema, graphiql: true }));
+console.log('[GRAPHQL SERVER] Running on http://localhost:3000/v2');
 
 app.listen(3000, () => {
   console.log('[SERVER] Running at port 3000');
