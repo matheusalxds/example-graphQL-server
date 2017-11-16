@@ -7,14 +7,14 @@ const CommentType = new GraphQLObjectType({
   }),
 });
 
-const SerieType = new GraphQLObjectType({
+const SerieType = new GraphQLObjectType ({
   name: 'SerieType',
   fields: () => ({
-    _id: { type: GraphQLString},
-    name: { type: GraphQLString},
-    status: { type: GraphQLString},
-    comments: { type: CommentType}
-  }),
+    _id: { type: GraphQLString },
+    name: { type: GraphQLString },
+    status: { type: GraphQLString },
+    comments : { type: CommentType }
+  })
 });
 
 export default SerieType;

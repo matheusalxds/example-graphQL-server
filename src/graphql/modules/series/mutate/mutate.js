@@ -1,13 +1,12 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql/type';
-import fetch from 'node-fetch';
 
 import SerieType from '../types/serie-type';
 import SerieBodyInputType from '../types/serie';
-import serieController from '../../../../v1/series/controllers/serie';
+import SerieController from '../../../../v1/series/controllers/serie';
 
 const SerieMutate = {
   type: SerieType,
-  args:{
+  args: {
     _id: {
       name: '_id',
       type: GraphQLString,
@@ -17,7 +16,7 @@ const SerieMutate = {
       type: SerieBodyInputType,
     },
   },
-  resolve: (obj, { _id, body }) => serieController.updateSerie({ _id, body })
+  resolve: (obj, { _id, body }) => SerieController.updateSerie({ _id, body })
 };
 
 export default SerieMutate;

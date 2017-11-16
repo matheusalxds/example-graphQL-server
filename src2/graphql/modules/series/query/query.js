@@ -1,7 +1,7 @@
-import { GraphQLList, GraphQLString } from 'graphql/type';
+import { GraphQLList, GraphQLString, GraphQLObjectType } from 'graphql/type';
 
-import SerieType from '../types/serie-type';
-import serieController from '../../../../v1/series/controllers/serie';
+import SerieType from '../types/serie';
+import serieController from '../../../../v2/controllers/serie';
 
 const SerieQuery = {
   type: new GraphQLList(SerieType),

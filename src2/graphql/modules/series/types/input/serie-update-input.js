@@ -3,16 +3,16 @@ import {
   GraphQLString,
 } from 'graphql/type';
 
-export const fields = {
+const fields = {
   name: {
-    type: GraphQLString,
+    type: GraphQLString
   },
   status: {
     type: GraphQLString
   }
-};
+}
 
 export default new GraphQLInputObjectType({
-  name: 'SerieInput',
+  name: 'SerieInputType',
   fields,
 });
