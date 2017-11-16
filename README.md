@@ -1,2 +1,2 @@
 # example-graphQL-server
-Studies based in @github/brunocramos example
+Studies based in https://github.com/brunocramos example.
