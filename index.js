@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 import './db';
 
 // Graphql
-import rootSchema from './src3/graphql/root';
+import rootSchema from './src4/graphql/root';
 app.use('/v2', graphqlHttp({ schema: rootSchema, graphiql: true }));
 console.log('[GRAPHQL SERVER] Running on http://localhost:3000/v2');
 

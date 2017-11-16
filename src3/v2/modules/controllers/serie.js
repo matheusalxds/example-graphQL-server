@@ -1,4 +1,3 @@
-
 import Serie from '../models/serie';
 
 class SerieController{
