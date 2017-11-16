@@ -1,2 +1,2 @@
 # example-graphQL-server
-Studies based in https://github.com/brunocramos/rest-graphql-mongo-api-example example.
+Studies based on https://github.com/brunocramos/rest-graphql-mongo-api-example example.
