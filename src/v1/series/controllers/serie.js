@@ -35,7 +35,7 @@ class SerieController {
       serie.status = filter.body.status;
     }
 
-    return await serie.save();
+    return await serie.save(); 
   }
 
 }
