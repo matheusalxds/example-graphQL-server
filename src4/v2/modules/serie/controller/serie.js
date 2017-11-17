@@ -35,6 +35,23 @@ class SerieController{
     }
     return await serie.save();
   }
+
+  async create(filter = {}){
+    const serie = {};
+
+    if(filter.name){
+      serie.name = filter.name;
+    }
+    if(filter.status){
+      serie.status = filter.status;
+    }
+    if(filter.comments){
+      serie.comments = filter.comments;
+    }
+    const newSerie = await Serie.create(serie);
+
+    return newSerie;
+  }
 }
 
 export default new SerieController(Serie);
